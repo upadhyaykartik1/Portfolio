@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+import Image from "next/image";
 import { motion, MotionConfig } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import { profile } from "@/data/profile";
@@ -14,6 +16,9 @@ function GithubIcon(props) {
 const item = { hidden: { opacity: 0, y: 14 }, show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } } };
 
 export default function Hero() {
+  const [photoFailed, setPhotoFailed] = useState(false);
+  const showPhoto = Boolean(profile.photo) && !photoFailed;
+
   return (
     <MotionConfig reducedMotion="user">
       <section id="home" aria-labelledby="hero-title" className="relative overflow-hidden">
@@ -46,20 +51,39 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <motion.aside variants={item} aria-label="Current and recent roles" className="self-end rounded-lg border border-line bg-panel/70 p-5">
-            <p className="font-display text-7xl leading-none text-accent" aria-hidden="true">KU</p>
-            <ul className="mt-6 space-y-4 text-sm">
-              {profile.now.map((n, i) => (
-                <li key={n.label} className="flex gap-3">
-                  <span aria-hidden="true" className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i === 0 ? "bg-accent" : "bg-line"}`} />
-                  <span>
-                    <span className="block text-ink">{n.label}</span>
-                    <span className="text-mute">{n.where} · {n.since}</span>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </motion.aside>
+          <div className="flex flex-col items-center gap-7 self-end">
+            <motion.div variants={item} className="w-fit">
+              {showPhoto ? (
+                <Image
+                  src={profile.photo}
+                  alt={`${profile.name}, ${profile.role}`}
+                  width={192}
+                  height={192}
+                  priority
+                  onError={() => setPhotoFailed(true)}
+                  className="h-36 w-36 rounded-full border border-line object-cover shadow-lg shadow-black/50 sm:h-48 sm:w-48"
+                />
+              ) : (
+                <div className="grid h-36 w-36 place-items-center rounded-full border border-line bg-panel/70 sm:h-48 sm:w-48">
+                  <span className="font-display text-5xl text-accent sm:text-6xl" aria-hidden="true">KU</span>
+                </div>
+              )}
+            </motion.div>
+
+            <motion.aside variants={item} aria-label="Current and recent roles" className="w-full rounded-lg border border-line bg-panel/70 p-5">
+              <ul className="space-y-4 text-sm">
+                {profile.now.map((n, i) => (
+                  <li key={n.label} className="flex gap-3">
+                    <span aria-hidden="true" className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i === 0 ? "bg-accent" : "bg-line"}`} />
+                    <span>
+                      <span className="block text-ink">{n.label}</span>
+                      <span className="text-mute">{n.where} · {n.since}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </motion.aside>
+          </div>
         </motion.div>
       </section>
     </MotionConfig>

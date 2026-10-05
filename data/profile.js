@@ -5,6 +5,7 @@ export const profile = {
   github: "https://github.com/upadhyaykartik1",
   linkedin: "https://www.linkedin.com/in/kartik-upadhyay-429004301/",
   resume: "/resume/Kartik-Upadhyay-Resume.pdf",
+  photo: "/images/profile.jpg",
   location: "Uttarakhand, India",
   headline: "I build AI-powered applications and the full-stack systems behind them.",
   intro:
