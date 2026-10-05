@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Kartik Upadhyay (AI & Full-Stack Engineer)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Kartik Upadhyay} \\ \vspace{2pt}
+    \small Uttarakhand, India $|$ +91 7310991482 $|$ \href{mailto:upadhyaykartik187@gmail.com}{\underline{upadhyaykartik187@gmail.com}} \\
+    \href{https://github.com/upadhyaykartik1}{\underline{github.com/upadhyaykartik1}} $|$ 
+    \href{https://linkedin.com/in/upadhyaykartik}{\underline{linkedin.com/in/upadhyaykartik}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{Computer Science Engineering undergraduate with hands-on experience designing Retrieval-Augmented Generation (RAG) pipelines, LLM-based agentic workflows, and scalable RESTful backends. Combines deep foundations in Data Structures \& Algorithms and Python (FastAPI) with production full-stack engineering (React, Next.js, Node.js) and automated testing (Cypress). Proven track record of building reliable, end-to-end AI applications with measured latency, structured schemas, and zero-downtime architecture.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI \& Generative AI}{: Large Language Models (LLM), Retrieval-Augmented Generation (RAG), LangChain, LlamaIndex, Vector Databases (ChromaDB, Pinecone, FAISS), Prompt Engineering, Pydantic, OpenAI \& Gemini APIs, Hugging Face} \\
+     \textbf{Languages}{: Python, JavaScript (ES6+), Java, C++, SQL} \\
+     \textbf{Backend \& Systems}{: FastAPI, Node.js, Express.js, RESTful API Design, Vector Search, Redis (Caching basics)} \\
+     \textbf{Frontend}{: React.js, Next.js (App Router), Tailwind CSS, Redux, HTML5, CSS3} \\
+     \textbf{Testing \& Tools}{: Cypress (Automated E2E Testing), Git, GitHub, Docker, Postman, CI/CD Basics, SDLC} \\
+     \textbf{CS Fundamentals}{: Data Structures \& Algorithms (DSA), Object-Oriented Programming (OOP), Complexity Analysis}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Operations \& Growth Intern}{Aug 2026 -- Present}
+      {Kafalmart (Nyaari)}{Remote}
+      \resumeItemListStart
+        \resumeItem{Engineered automated data extraction and catalog workflows in Python using LLM function calling and Pydantic schemas, reducing manual catalog processing time by 65\%.}
+        \resumeItem{Implemented prompt engineering templates with structured JSON validation, minimizing model hallucinations and standardizing product descriptions across 500+ SKUs.}
+        \resumeItem{Analyzed sales, operational metrics, and user retention; built automated weekly executive dashboards to inform founder-led growth strategies.}
+        \resumeItem{Built lightweight API automations for customer FAQ triage, decreasing first-response turnaround for recurring inquiries.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Full Stack Developer Intern}{Apr 2026 -- Jul 2026}
+      {TechXAlt}{Dehradun, Uttarakhand}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed 12+ production RESTful API endpoints in Node.js and Express powering core application features and high-volume transaction flows.}
+        \resumeItem{Connected backend microservices with dynamic React.js frontends, ensuring responsive state synchronization and UI reliability.}
+        \resumeItem{Authored automated end-to-end test suites using Cypress, catching critical regressions early and maintaining 90\%+ API reliability prior to release.}
+        \resumeItem{Participated in Agile sprint planning, peer code reviews on GitHub, and iterative delivery to ship stable weekly production updates.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Portfolio AI Assistant \& RAG Engine} $|$ \emph{Next.js, React, RAG, Web Streams API, Tailwind CSS}}{2026}
+          \resumeItemListStart
+            \resumeItem{Engineered an end-to-end contextual RAG assistant embedded into a live portfolio, enabling recruiters to query technical background, projects, and stack interactively.}
+            \resumeItem{Implemented keyword/semantic knowledge chunking and relevance scoring to retrieve grounded facts before inference, mitigating model hallucinations.}
+            \resumeItem{Architected a dual-engine streaming pipeline supporting cloud LLMs (Gemini / OpenAI) with an intelligent zero-downtime local fallback, delivering word-by-word streaming via Web Streams API.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Multi-Step Loan Application System} $|$ \emph{Node.js, Express, React, Cypress, RESTful APIs, OOP}}{Dec 2025 -- Feb 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack loan origination platform featuring dynamic multi-step form workflows, document uploads, digital signatures, and dynamic EMI calculation.}
+            \resumeItem{Designed modular RESTful APIs with PAN and Aadhaar identity verification logic, applying clean object-oriented architecture and layered service patterns.}
+            \resumeItem{Integrated client/server input validation, form auto-saving, and comprehensive Cypress E2E test coverage, achieving high system reliability and zero release regressions.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Autonomous Multi-Tool Agent \& Copilot} $|$ \emph{Python, FastAPI, LangChain, ChromaDB}}{2026}
+          \resumeItemListStart
+            \resumeItem{Developed an autonomous agent pipeline capable of multi-step planning, web search execution, and dynamic external tool calling to synthesize comprehensive technical briefings.}
+            \resumeItem{Implemented vector store retrieval (ChromaDB) with recursive text chunking and similarity thresholding to deliver cited sources for generated summaries.}
+            \resumeItem{Exposed inference endpoints via a high-performance FastAPI microservice with asynchronous request handling and Pydantic validation.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Applied Sciences}{Bhimtal, Uttarakhand}
+      {Bachelor of Technology in Computer Science and Engineering -- CGPA: 7.64}{Expected 2027}
+      \resumeItemListStart
+        \resumeItem{Senior Secondary (12th): 77\% $|$ Secondary (10th): 84\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS & RESPONSIBILITIES-----------
+\section{Certifications \& Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications}{: Applied Data Science Lab (WorldQuant University, 2026), AI Training (Acmegrade, 2024), Geo-Data Sharing \& Cyber Security (IIRS, ISRO Grade A+, 2024), Data Visualization \& Frontend Libraries (freeCodeCamp)} \\
+     \textbf{Leadership}{: Elected Sports Secretary (directed inter-college tournaments for 500+ participants); Student Representative on the institute's AICTE Induction Cell (mentored incoming freshmen)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
+

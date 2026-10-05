@@ -1,0 +1,46 @@
+export const projects = [
+  {
+    slug: "portfolio-rag-assistant",
+    name: "Portfolio AI Assistant & RAG Engine",
+    category: "Generative AI & Full-Stack System",
+    period: "2026",
+    summary: "A contextual Retrieval-Augmented Generation (RAG) assistant embedded into this portfolio with semantic knowledge chunking, real-time token streaming, and dual-engine architecture.",
+    stack: ["Generative AI", "RAG Architecture", "Vector Search", "Next.js (App Router)", "Web Streams API", "Tailwind CSS"],
+    isChatTrigger: true,
+    chatPrompt: "Explain the architecture of this Portfolio AI Assistant and how RAG works here.",
+    github: "https://github.com/upadhyaykartik1",
+    details: [
+      { h: "What it does", p: "Serves as an interactive copilot for recruiters and visitors, answering natural-language queries about Kartik's technical background, projects, and stack in real-time." },
+      { h: "RAG & Dual-Engine Architecture", p: "Implements keyword and semantic knowledge chunking with relevance scoring to retrieve grounded facts before inference, mitigating model hallucinations. Connects to cloud LLMs (Gemini / OpenAI) with a zero-downtime local RAG fallback." },
+      { h: "Streaming UX", p: "Delivers chunked token streaming via Web Streams API with auto-scrolling, quick-prompt pill triggers, and responsive dark modal layout." },
+    ],
+  },
+  {
+    slug: "loan-application-system",
+    name: "Multi-Step Loan Application System",
+    category: "Full-Stack Web Application",
+    period: "Dec 2025 – Feb 2026",
+    summary: "A production-style loan origination platform featuring dynamic multi-step form workflows, document uploads, e-signatures, and EMI calculation.",
+    stack: ["Node.js", "Express", "REST APIs", "Cypress", "JavaScript", "OOP"],
+    github: "https://github.com/upadhyaykartik1",
+    details: [
+      { h: "What it does", p: "Guides borrowers through a multi-step loan origination flow: dynamic state forms, document uploads, digital signatures, and dynamic EMI calculations." },
+      { h: "Backend Architecture", p: "Modular RESTful APIs in Node.js and Express with PAN and Aadhaar identity verification logic, structured with object-oriented design and clean API layering." },
+      { h: "Reliability & Testing", p: "Form auto-saving, server-side validation, and comprehensive Cypress end-to-end test coverage to ensure zero release regressions." },
+    ],
+  },
+  {
+    slug: "autonomous-ai-copilot",
+    name: "Autonomous Multi-Tool Agent & Copilot",
+    category: "AI Microservice & Tool-Calling Pipeline",
+    period: "2026",
+    summary: "An autonomous agent system capable of multi-step planning, web search execution, and dynamic tool calling to synthesize comprehensive technical briefings.",
+    stack: ["Python", "FastAPI", "LangChain", "ChromaDB", "OpenAI / Gemini API", "Pydantic"],
+    github: "https://github.com/upadhyaykartik1",
+    details: [
+      { h: "What it does", p: "Executes multi-step autonomous planning, web search tool execution, and dynamic external API calling to generate structured research briefings." },
+      { h: "Vector Retrieval", p: "Integrates ChromaDB vector store retrieval with recursive text chunking and similarity thresholding to deliver cited sources for generated output." },
+      { h: "API Architecture", p: "Exposes inference endpoints via a high-performance FastAPI microservice with asynchronous request handling and Pydantic schema validation." },
+    ],
+  },
+];
