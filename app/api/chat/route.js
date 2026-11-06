@@ -13,81 +13,104 @@ function generateLocalResponse(query, retrievedContext) {
   if (q.includes("loan") || q.includes("multi-step") || q.includes("aadhaar") || q.includes("pan")) {
     return (
       "### Multi-Step Loan Application System\n\n" +
-      "Kartik developed a production-style full-stack loan origination platform (**Dec 2025 – Feb 2026**).\n\n" +
+      "Kartik built a full-stack loan application platform (**Dec 2025 – Feb 2026**).\n\n" +
       "**Technical Highlights:**\n" +
-      "- **Dynamic Multi-Step Workflows:** Form state auto-saving, document uploads, e-signatures, and dynamic EMI calculations.\n" +
-      "- **Backend API:** Built with Node.js & Express following clean OOP principles, implementing PAN & Aadhaar KYC verification flows.\n" +
-      "- **Testing & Reliability:** Covered with comprehensive **Cypress end-to-end test suites** and client/server validation to ensure zero release regressions."
+      "- **Dynamic Workflows:** Multi-step forms with document uploads, e-signatures, auto-save, and EMI calculations.\n" +
+      "- **Backend API:** RESTful APIs in Node.js & Express with PAN/Aadhaar verification workflows, validation, and error handling.\n" +
+      "- **Testing & Reliability:** Comprehensive Cypress end-to-end test coverage to ensure reliable releases."
     );
   }
 
-  // 2. Specific Intent: Autonomous AI Agent / Copilot
-  if (q.includes("agent") || q.includes("copilot") || q.includes("multi-tool") || q.includes("fastapi")) {
+  // 2. Specific Intent: AI-Powered Personal Portfolio Website
+  if (q.includes("portfolio") || q.includes("personal website") || q.includes("vercel")) {
     return (
-      "### Autonomous Multi-Tool Agent & Copilot\n\n" +
-      "Kartik engineered an autonomous AI agent microservice in Python.\n\n" +
-      "**Technical Highlights:**\n" +
-      "- **Multi-Step Execution:** Uses LangChain and Python for multi-step planning, web search tool execution, and dynamic external API calling.\n" +
-      "- **Vector Search:** Integrated ChromaDB vector store with recursive text chunking and similarity thresholding for cited source summaries.\n" +
-      "- **Microservice Architecture:** High-performance FastAPI endpoints with asynchronous request handling and Pydantic schema validation."
+      "### AI-Powered Personal Portfolio Website\n\n" +
+      "Kartik developed and deployed this responsive portfolio (**Oct 2026**).\n\n" +
+      "**Highlights:**\n" +
+      "- **AI Assistant:** Integrated an AI-powered assistant that answers visitor queries about his skills, projects, experience, and qualifications.\n" +
+      "- **Interface:** Modern, interactive UI with responsive layouts, smooth animations, and seamless chatbot integration.\n" +
+      "- **Stack:** React.js, JavaScript, HTML, CSS, AI API, and Vercel."
     );
   }
 
-  // 3. Specific Intent: Work Experience / Internships
+  // 3. Specific Intent: KafalMart Website with AI Chatbot
+  if (
+    q.includes("grocery") ||
+    q.includes("delivery") ||
+    q.includes("chatbot") ||
+    (q.includes("kafalmart") && (q.includes("website") || q.includes("project")))
+  ) {
+    return (
+      "### KafalMart Website with AI Chatbot\n\n" +
+      "Kartik built a full-stack website for a hyperlocal food and grocery delivery startup (**Aug 2026 – Oct 2026**).\n\n" +
+      "**Technical Highlights:**\n" +
+      "- **Full-Stack Platform:** Restaurant and grocery listings on a Node.js/Express/MongoDB backend with an HTML/CSS/JavaScript frontend.\n" +
+      "- **AI Chatbot:** Integrated an AI chatbot into the site by connecting LLM APIs with the backend.\n" +
+      "- **Stack:** Node.js, Express, MongoDB, LLM APIs."
+    );
+  }
+
+  // 4. Specific Intent: Work Experience / Internships
   if (q.includes("experience") || q.includes("intern") || q.includes("kafalmart") || q.includes("techxalt") || q.includes("work")) {
     return (
       "### Work & Internship Experience\n\n" +
-      "Kartik has hands-on experience in both full-stack software development and AI operations:\n\n" +
-      "1. **AI Operations & Growth Intern @ Kafalmart (Nyaari)** *(Aug 2026 – Present)*\n" +
-      "   - Engineered automated Python data extraction pipelines using LLM function calling and Pydantic schemas, reducing catalog processing time by **65%**.\n" +
-      "   - Designed prompt templates with structured JSON validation across 500+ SKUs.\n" +
-      "   - Built lightweight API automations for customer FAQ triage.\n\n" +
-      "2. **Full Stack Developer Intern @ TechXAlt** *(Apr 2026 – Jul 2026)*\n" +
-      "   - Architected and deployed **12+ production RESTful API endpoints** in Node.js and Express.\n" +
-      "   - Connected backend services to React.js frontends and wrote automated Cypress test suites maintaining **90%+ API reliability**."
+      "1. **AI Engineer Intern @ KafalMart (Nyaari)** *(Aug 2026 – Oct 2026, Remote, Pithoragarh)*\n" +
+      "   - Integrated an LLM-powered chatbot into a live e-commerce platform, supporting customer queries across **4+ service categories**.\n" +
+      "   - Engineered prompts and a knowledge base covering **30+ delivery locations** for context-aware customer responses.\n" +
+      "   - Used ChatGPT, Gemini, and Claude for content generation, FAQ automation, and e-commerce workflows.\n" +
+      "   - **Tech:** Node.js, LLM APIs, ChatGPT, Gemini, Claude.\n\n" +
+      "2. **Full Stack Developer Intern @ TechXAlt** *(Apr 2026 – Jul 2026, Remote, Dehradun)*\n" +
+      "   - Developed RESTful APIs using Node.js and Express.js with CRUD operations, validation, and error handling.\n" +
+      "   - Integrated React.js features with Node.js, Express.js, and MongoDB backend services.\n" +
+      "   - Automated API testing and collaborated using Git/GitHub for version control and code reviews.\n" +
+      "   - **Tech:** Node.js, Express, RESTful API."
     );
   }
 
-  // 4. Specific Intent: Skills & Tech Stack
-  if (q.includes("stack") || q.includes("skill") || q.includes("tech") || q.includes("python") || q.includes("react") || q.includes("node") || q.includes("cypress")) {
+  // 5. Specific Intent: Skills & Tech Stack
+  if (q.includes("stack") || q.includes("skill") || q.includes("tech") || q.includes("python") || q.includes("react") || q.includes("node") || q.includes("cypress") || q.includes("mongodb")) {
     return (
       "### Technical Skills & Stack\n\n" +
-      "Kartik specializes at the intersection of **AI Engineering & Full-Stack Systems**:\n\n" +
-      "- 🧠 **AI & GenAI:** Retrieval-Augmented Generation (RAG), LLMs, LangChain, LlamaIndex, Vector Databases (ChromaDB, Pinecone), Pydantic, OpenAI & Gemini APIs, Hugging Face.\n" +
-      "- ⚙️ **Backend:** Python (FastAPI), Node.js, Express.js, RESTful API Design, Vector Search, Redis.\n" +
-      "- 💻 **Frontend:** React.js, Next.js (App Router), Tailwind CSS, Redux.\n" +
-      "- 🧪 **Testing & Tools:** Cypress (Automated E2E Testing), Git/GitHub, Docker basics, Postman, SDLC.\n" +
-      "- 📐 **Fundamentals:** Data Structures & Algorithms (DSA), OOP, Complexity Analysis."
+      "- 🧠 **AI/ML & Data Science:** Machine Learning, Deep Learning, Generative AI, LLMs, RAG, Scikit-learn, Pandas, NumPy.\n" +
+      "- 🗣️ **Programming Languages:** Python, JavaScript, Java, C++.\n" +
+      "- ⚙️ **Frameworks & Libraries:** Node.js, Express.js, React.js, Redux, Bootstrap.\n" +
+      "- 🗄️ **Databases:** MySQL, MongoDB, SQL.\n" +
+      "- 🧪 **Tools & Platforms:** Git, GitHub, Cypress, CI/CD.\n" +
+      "- 📐 **Core Competencies:** DSA, OOP, Complexity Analysis, Analytical Thinking, Team Collaboration, Leadership."
     );
   }
 
-  // 5. Specific Intent: Contact & Hiring
+  // 6. Specific Intent: Contact & Hiring
   if (q.includes("contact") || q.includes("hire") || q.includes("email") || q.includes("reach") || q.includes("github") || q.includes("linkedin")) {
     return (
       "### Contact & Hiring Information\n\n" +
       "Kartik is actively seeking **AI Engineer, GenAI Developer, and Full-Stack** roles:\n\n" +
       `- 📧 **Email:** [${portfolioKnowledge.bio.email}](mailto:${portfolioKnowledge.bio.email})\n` +
+      `- 📞 **Phone:** ${portfolioKnowledge.bio.phone}\n` +
       `- 🐙 **GitHub:** [github.com/upadhyaykartik1](${portfolioKnowledge.bio.github})\n` +
       `- 💼 **LinkedIn:** [linkedin.com/in/upadhyaykartik](${portfolioKnowledge.bio.linkedin})\n` +
       `- 📄 **Resume:** [View / Download PDF Resume](/resume)`
     );
   }
 
-  // 6. Specific Intent: Education & Certifications
-  if (q.includes("education") || q.includes("college") || q.includes("cgpa") || q.includes("birla") || q.includes("cert") || q.includes("isro") || q.includes("worldquant")) {
+  // 7. Specific Intent: Education & Certifications
+  if (q.includes("education") || q.includes("college") || q.includes("cgpa") || q.includes("birla") || q.includes("cert") || q.includes("isro") || q.includes("worldquant") || q.includes("school")) {
     return (
       "### Education & Certifications\n\n" +
-      "- 🎓 **Education:** B.Tech in Computer Science & Engineering from **Birla Institute of Applied Sciences**, Bhimtal (**CGPA: 7.64**, Expected May 2027).\n" +
+      "- 🎓 **B.Tech in Computer Science Engineering** — Birla Institute of Applied Sciences, Bhimtal (**CGPA: 7.64**, Aug 2023 – Aug 2027).\n" +
+      "- 🏫 **Senior Secondary (12th):** Stafford Public School, Pithoragarh — 77% (2022–2023).\n" +
+      "- 🏫 **Secondary (10th):** DayaSagar Inter College, Pithoragarh — 84% (2020–2021).\n" +
       "- 📜 **Certifications:**\n" +
       "  - Applied Data Science Lab (WorldQuant University, 2026)\n" +
-      "  - Artificial Intelligence Training (Acmegrade, 2024)\n" +
-      "  - Geo-Data Sharing & Cyber Security (ISRO/IIRS Grade A+, 2024)\n" +
-      "  - Data Visualization & Frontend Development (freeCodeCamp)\n" +
-      "- 🏆 **Leadership:** Elected Sports Secretary & AICTE Induction Cell Student Representative."
+      "  - AI Training (Acmegrade, 2024)\n" +
+      "  - Cyber Security A+ (IIRS, ISRO, 2024)\n" +
+      "  - Data Visualization & Frontend Libraries (freeCodeCamp)\n" +
+      "  - JavaScript Algorithms & Data Structures (freeCodeCamp)\n" +
+      "- 🏆 **Leadership:** Sports Secretary & Student Representative on the Induction Cell at Birla Institute of Applied Sciences, Bhimtal."
     );
   }
 
-  // 7. Context-grounded synthesis (Dynamic RAG fallback per query)
+  // 8. Context-grounded synthesis (Dynamic RAG fallback per query)
   if (retrievedContext) {
     return (
       "### Relevant Insights for Your Query\n\n" +
@@ -98,12 +121,12 @@ function generateLocalResponse(query, retrievedContext) {
 
   // Default welcome response
   return (
-    `**Kartik Upadhyay** is an **AI & Full-Stack Engineer** completing his B.Tech in Computer Science at Birla Institute of Applied Sciences (2027).\n\n` +
+    `**Kartik Upadhyay** is an **AI Engineer Intern** completing his B.Tech in Computer Science Engineering at Birla Institute of Applied Sciences (2027).\n\n` +
     `He specializes in:\n` +
-    `- **Generative AI & RAG:** LLM pipelines, vector databases (ChromaDB/Pinecone), autonomous agents, and Pydantic schemas.\n` +
-    `- **Full-Stack Backends:** Production APIs with Python (FastAPI) and Node.js/Express, paired with React/Next.js interfaces.\n` +
-    `- **Quality & Testing:** Cypress automated testing, clean OOP architecture, and 90%+ test coverage.\n\n` +
-    `Feel free to ask about his **Loan Application project**, **AI Agent microservice**, **internship achievements**, or **contact details**!`
+    `- **AI & LLM Applications:** LLM-powered chatbots, prompt engineering, knowledge bases, and Generative AI.\n` +
+    `- **Full-Stack Builds:** Node.js/Express, React.js, and MongoDB, with automated API testing using Cypress.\n` +
+    `- **AI Tooling:** ChatGPT, Gemini, and Claude for content generation, FAQ automation, and e-commerce workflows.\n\n` +
+    `Feel free to ask about his **KafalMart work**, **portfolio website**, **Loan Application project**, or **contact details**!`
   );
 }
 
@@ -121,11 +144,11 @@ export async function POST(req) {
     const retrievedContext = retrieveRelevantContext(latestMessage);
 
     const systemPrompt = `You are the personal AI Assistant for Kartik Upadhyay's developer portfolio.
-Your role is to inform recruiters, engineering managers, and visitors about Kartik's technical expertise, AI projects, full-stack systems experience, and background.
+Your role is to inform recruiters, engineering managers, and visitors about Kartik's AI engineering experience, full-stack projects, and background.
 
 Tone & Style:
 - Professional, concise, articulate, and welcoming.
-- Emphasize his dual strengths: modern Generative AI engineering (LLMs, RAG, Python, vector databases) alongside solid full-stack engineering (Next.js, React, Node.js, automated Cypress testing).
+- Emphasize his dual strengths: AI applications (LLM chatbots, prompt engineering, knowledge bases, Generative AI) alongside full-stack engineering (Node.js/Express, React.js, MongoDB, automated Cypress testing).
 - Format using clean Markdown with bullet points where appropriate.
 - Answer strictly based on the provided context. If asked about something unrelated, politely steer back to Kartik's portfolio or offer his email (${portfolioKnowledge.bio.email}).
 
@@ -310,4 +333,3 @@ ${retrievedContext}
     });
   }
 }
-

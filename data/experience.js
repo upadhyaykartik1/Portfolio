@@ -1,44 +1,66 @@
 export const experience = [
   {
-    role: "AI Operations & Growth Intern",
-    org: "Kafalmart (Nyaari)",
-    place: "Remote",
-    period: "Aug 2026 to Present",
+    role: "AI Engineer Intern",
+    org: "KafalMart (Nyaari)",
+    place: "Remote, Pithoragarh, Uttarakhand",
+    period: "Aug 2026 to Oct 2026",
     kind: "Internship",
+    tech: "Node.js, LLM APIs, ChatGPT, Gemini, Claude",
     points: [
-      "Engineered automated data extraction pipelines in Python using LLM function calling and Pydantic schemas, reducing catalog turnaround by 65%.",
-      "Designed standardized prompt templates with structured JSON validation, minimizing model hallucinations and standardizing product metadata across 500+ SKUs.",
-      "Built lightweight API automations for customer FAQ triage, decreasing first-response resolution time for recurring user queries.",
+      "Integrated an LLM-powered chatbot into a live e-commerce platform, supporting customer queries across 4+ service categories.",
+      "Engineered prompts and a knowledge base covering 30+ delivery locations for context-aware customer responses.",
+      "Utilized ChatGPT, Gemini, and Claude for content generation, FAQ automation, and e-commerce workflows.",
     ],
   },
   {
     role: "Full Stack Developer Intern",
     org: "TechXAlt",
-    place: "Dehradun, Uttarakhand",
+    place: "Remote, Dehradun, Uttarakhand",
     period: "Apr 2026 to Jul 2026",
     kind: "Internship",
+    tech: "Node.js, Express, RESTful API",
     points: [
-      "Architected and deployed 12+ production RESTful API endpoints in Node.js and Express powering core application features and transaction flows.",
-      "Connected backend microservices with dynamic React.js frontends, ensuring responsive state synchronization and UI reliability.",
-      "Authored automated end-to-end test suites using Cypress, catching critical regressions early and maintaining 90%+ API reliability prior to release.",
+      "Developed RESTful APIs using Node.js and Express.js, implementing CRUD operations, validation, and error handling.",
+      "Integrated React.js features with Node.js, Express.js, and MongoDB backend services.",
+      "Automated API testing and collaborated using Git/GitHub for version control and code reviews.",
     ],
   },
 ];
 
 export const education = {
-  degree: "B.Tech in Computer Science and Engineering (CGPA: 7.64)",
+  degree: "B.Tech in Computer Science Engineering (CGPA: 7.64)",
   school: "Birla Institute of Applied Sciences, Bhimtal, Uttarakhand",
-  period: "Expected May 2027",
+  period: "Aug 2023 – Aug 2027",
+  schooling: [
+    "Senior Secondary (12th), Stafford Public School, Pithoragarh, Uttarakhand — 77% (2022–2023)",
+    "Secondary (10th), DayaSagar Inter College, Pithoragarh, Uttarakhand — 84% (2020–2021)",
+  ],
 };
 
 export const certifications = [
   "Applied Data Science Lab, WorldQuant University (2026)",
-  "Artificial Intelligence Training, Acmegrade (2024)",
-  "Geo-Data Sharing & Cyber Security, IIRS, ISRO, Grade A+ (2024)",
-  "Frontend Development Libraries (V8) & Data Visualization, freeCodeCamp",
+  "AI Training, Acmegrade (2024)",
+  "Cyber Security (A+), IIRS, ISRO (2024)",
+  "Data Visualization & Frontend Libraries, freeCodeCamp",
+  "JavaScript Algorithms & Data Structures, freeCodeCamp",
 ];
 
 export const responsibilities = [
-  { title: "Sports Secretary", detail: "Elected student representative; organized college sports events and tournaments for 500+ participants." },
-  { title: "Student Representative, Induction Cell", detail: "Appointed to the institute's AICTE-mandated Induction Cell (Feb 2026), representing students in onboarding and technical mentorship." },
+  {
+    title: "Sports Secretary",
+    org: "Birla Institute of Applied Sciences, Bhimtal",
+    points: [
+      "Led sports events, tournaments, and team coordination.",
+      "Managed event planning, registrations, and logistics.",
+      "Represented athletes and coordinated with faculty.",
+    ],
+  },
+  {
+    title: "Student Representative – Induction Cell",
+    org: "Birla Institute of Applied Sciences, Bhimtal",
+    points: [
+      "Coordinated student orientation and onboarding activities.",
+      "Represented students and facilitated faculty communication.",
+    ],
+  },
 ];

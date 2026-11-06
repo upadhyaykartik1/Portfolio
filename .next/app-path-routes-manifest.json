@@ -1,0 +1,9 @@
+{
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/icon.svg/route": "/icon.svg",
+  "/_not-found/page": "/_not-found",
+  "/api/chat/route": "/api/chat",
+  "/resume/page": "/resume",
+  "/page": "/"
+}

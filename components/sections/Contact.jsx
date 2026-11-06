@@ -17,8 +17,9 @@ export default function Contact() {
         </a>
       </div>
       <ul className="mt-8 space-y-2 text-mute">
+        {profile.phone && <li>Phone: <a className="text-ink underline decoration-line underline-offset-4 hover:decoration-accent" href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a></li>}
         <li>GitHub: <a className="text-ink underline decoration-line underline-offset-4 hover:decoration-accent" href={profile.github} target="_blank" rel="noopener noreferrer">{profile.github.replace("https://", "")}</a></li>
-        {profile.linkedin && <li>LinkedIn: <a className="text-ink underline" href={profile.linkedin} target="_blank" rel="noopener noreferrer">{profile.linkedin.replace("https://", "")}</a></li>}
+        {profile.linkedin && <li>LinkedIn: <a className="text-ink underline decoration-line underline-offset-4 hover:decoration-accent" href={profile.linkedin} target="_blank" rel="noopener noreferrer">{profile.linkedin.replace("https://", "")}</a></li>}
       </ul>
     </Section>
   );

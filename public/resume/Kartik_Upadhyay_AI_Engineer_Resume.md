@@ -1,83 +1,95 @@
 # KARTIK UPADHYAY
-**AI & Full-Stack Engineer**  
-Uttarakhand, India | +91 7310991482 | [upadhyaykartik187@gmail.com](mailto:upadhyaykartik187@gmail.com)  
-[GitHub: github.com/upadhyaykartik1](https://github.com/upadhyaykartik1) | [LinkedIn: linkedin.com/in/upadhyaykartik](https://linkedin.com/in/upadhyaykartik) | [Portfolio Website](https://github.com/upadhyaykartik1)
+**AI Engineer Intern**  
+Bhimtal, India | +91 7310991482 | [upadhyaykartik187@gmail.com](mailto:upadhyaykartik187@gmail.com)  
+[GitHub: github.com/upadhyaykartik1](https://github.com/upadhyaykartik1)
 
 ---
 
-### SUMMARY
-Computer Science Engineering undergraduate with hands-on experience designing Retrieval-Augmented Generation (RAG) pipelines, LLM-based agent workflows, and scalable RESTful backends. Combines deep foundations in Data Structures & Algorithms and Python (FastAPI) with production full-stack engineering (React, Next.js, Node.js) and automated testing (Cypress). Proven track record of building reliable, end-to-end AI applications with measured latency, structured schemas, and zero-downtime architecture.
+### WORK EXPERIENCES
 
----
+**AI Engineer Intern** | *KafalMart (Nyaari)* — Remote, Pithoragarh, Uttarakhand  
+*August 2026 – October 2026*
+* Integrated an LLM-powered chatbot into a live e-commerce platform, supporting customer queries across 4+ service categories.
+* Engineered prompts and a knowledge base covering 30+ delivery locations for context-aware customer responses.
+* Utilized ChatGPT, Gemini, and Claude for content generation, FAQ automation, and e-commerce workflows.
+* **Technologies / Skills Used:** Node.js, LLM APIs, ChatGPT, Gemini, Claude.
 
-### TECHNICAL SKILLS
-* **AI & Generative AI:** Large Language Models (LLM), Retrieval-Augmented Generation (RAG), LangChain, LlamaIndex, Vector Databases (ChromaDB, Pinecone, FAISS), Prompt Engineering, Pydantic (Structured Outputs), OpenAI & Gemini APIs, Hugging Face Transformers.
-* **Languages:** Python, JavaScript (ES6+), Java, C++, SQL.
-* **Backend & Systems:** FastAPI, Node.js, Express.js, RESTful API Development, Vector Search, Redis (Caching basics).
-* **Frontend:** React.js, Next.js (App Router), Tailwind CSS, Redux, HTML5, CSS3.
-* **Testing & Tools:** Cypress (Automated End-to-End Testing), Git, GitHub, Docker, Postman, CI/CD Basics, SDLC.
-* **CS Fundamentals:** Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), System Design Basics, Complexity Analysis.
-
----
-
-### WORK EXPERIENCE
-
-**AI Operations & Growth Intern** | *Kafalmart (Nyaari)* — Remote  
-*August 2026 – Present*
-* Engineered automated data extraction and catalog workflows in Python using LLM function calling and Pydantic schemas, reducing manual catalog processing time by 65%.
-* Implemented standardized prompt templates with structured JSON validation, minimizing model hallucinations and standardizing product descriptions across 500+ SKUs.
-* Analyzed e-commerce sales, operational data, and customer retention metrics; designed automated weekly executive dashboards to inform founder-led growth strategies.
-* Built and maintained lightweight API automations for customer FAQ triage, decreasing average first-response turnaround for recurring user inquiries.
-
-**Full Stack Developer Intern** | *TechXAlt* — Dehradun, Uttarakhand  
+**Full Stack Developer Intern** | *TechXAlt* — Remote, Dehradun, Uttarakhand  
 *April 2026 – July 2026*
-* Architected and deployed 12+ production RESTful API endpoints in Node.js and Express powering core application features and transaction flows.
-* Collaborated with cross-functional engineering teams to wire backend microservices to dynamic React.js frontends, ensuring responsive state synchronization.
-* Authored automated end-to-end test suites using Cypress, catching critical regressions early and maintaining 90%+ API reliability prior to release.
-* Participated in Agile sprint planning, peer code reviews on GitHub, and iterative delivery to ship stable weekly production updates.
+* Developed RESTful APIs using Node.js and Express.js, implementing CRUD operations, validation, and error handling.
+* Integrated React.js features with Node.js, Express.js, and MongoDB backend services.
+* Automated API testing and collaborated using Git/GitHub for version control and code reviews.
+* **Technologies / Skills Used:** Node.js, Express, RESTful API.
 
 ---
 
 ### PROJECTS
 
-**Portfolio AI Assistant & RAG Engine** | *Next.js, React, RAG, Web Streams API, Tailwind CSS*  
-*2026* | [Live Demo Available on Portfolio]
-* Engineered an end-to-end contextual RAG assistant embedded into a live portfolio, enabling recruiters to query technical background, projects, and stack interactively.
-* Implemented keyword/semantic knowledge chunking and relevance scoring to retrieve grounded facts before inference, mitigating model hallucinations.
-* Architected a dual-engine streaming pipeline supporting cloud LLMs (Gemini / OpenAI) with an intelligent zero-downtime local fallback, delivering word-by-word streaming via Web Streams API.
+**KafalMart Website with AI Chatbot** | *Node.js, Express, MongoDB, LLM APIs*  
+*August 2026 – October 2026*
+* Built a full-stack website for a hyperlocal food and grocery delivery startup, featuring restaurant and grocery listings on a Node.js/Express/MongoDB backend and an HTML/CSS/JavaScript frontend.
+* Integrated an AI chatbot into the site by connecting LLM APIs with the backend.
+* **Technologies / Tools Used:** Node.js, Express, MongoDB, LLM APIs.
 
-**Multi-Step Loan Application System** | *Node.js, Express, React, RESTful APIs, Cypress, OOP*  
-*December 2025 – February 2026* | [GitHub Link]
-* Developed a full-stack loan origination platform featuring dynamic multi-step form workflows, document uploads, digital signatures, and dynamic EMI calculation.
-* Designed modular RESTful APIs with PAN and Aadhaar identity verification logic, applying clean object-oriented architecture and layered service patterns.
-* Integrated client/server input validation, form auto-saving, and comprehensive Cypress E2E test coverage, achieving high system reliability and zero release regressions.
+**AI-Powered Personal Portfolio Website** | *React.js, JavaScript, HTML, CSS, AI API, Vercel*  
+*October 2026*
+* Developed and deployed a responsive personal portfolio website featuring an integrated AI-powered assistant for interactive visitor engagement.
+* Integrated an AI assistant to answer visitor queries about technical skills, projects, professional experience, and qualifications.
+* Designed a modern, interactive user interface with responsive layouts, smooth animations, and seamless AI chatbot integration.
+* **Technologies / Tools Used:** React.js, JavaScript, HTML, CSS, AI API, Vercel.
 
-**Autonomous Multi-Tool Agent & Research Copilot** | *Python, FastAPI, LangChain, ChromaDB*  
-*2026* | [GitHub Link]
-* Developed an autonomous agent pipeline capable of multi-step planning, web search execution, and dynamic external tool calling to synthesize comprehensive technical briefings.
-* Implemented vector store retrieval (ChromaDB) with recursive text chunking and similarity thresholding to deliver cited sources for generated summaries.
-* Exposed inference endpoints via a high-performance FastAPI microservice, implementing asynchronous request handling and structured schema validation.
+**Multi-Step Loan Application System** | *Node.js, Express, Cypress*  
+*December 2025 – February 2026*
+* Built a full-stack platform with dynamic forms, document uploads, e-signatures, and EMI calculations.
+* Developed RESTful APIs (Node.js/Express) with PAN/Aadhaar verification workflows and comprehensive Cypress end-to-end test coverage, including auto-save and input validation.
+* **Technologies / Tools Used:** Node.js, Express, Cypress.
 
 ---
 
-### EDUCATION
+### SKILLS
+
+* **Programming Languages:** Python, JavaScript, Java, C++.
+* **AI/ML & Data Science:** Machine Learning, Deep Learning, Generative AI, LLMs, RAG, Scikit-learn, Pandas, NumPy.
+* **Frameworks & Libraries:** Node.js, Express.js, React.js, Redux, Bootstrap.
+* **Databases:** MySQL, MongoDB, SQL.
+* **Tools & Platforms:** Git, GitHub, Cypress, CI/CD.
+* **Core Competencies:** DSA, OOP, Complexity Analysis, Analytical Thinking, Team Collaboration, Leadership.
+
+---
+
+### EDUCATIONS
 
 **Birla Institute of Applied Sciences** — Bhimtal, Uttarakhand  
-*Bachelor of Technology in Computer Science and Engineering* | **CGPA: 7.64**  
-*Expected Graduation: 2027*  
-* Senior Secondary (12th): 77% | Secondary (10th): 84%
+*B.Tech in Computer Science Engineering* | **CGPA: 7.64**  
+*Aug 2023 – Aug 2027*
+
+**Stafford Public School** — Pithoragarh, Uttarakhand  
+*Senior Secondary (12th)* | **77%**  
+*2022 – 2023*
+
+**DayaSagar Inter College** — Pithoragarh, Uttarakhand  
+*Secondary (10th)* | **84%**  
+*2020 – 2021*
 
 ---
 
 ### CERTIFICATIONS
+
 * **Applied Data Science Lab** – WorldQuant University (2026)
-* **Artificial Intelligence Training** – Acmegrade (2024)
-* **Geo-Data Sharing & Cyber Security** – IIRS, ISRO (Grade A+, 2024)
-* **Data Visualization (V8) & Frontend Development Libraries** – freeCodeCamp
+* **AI Training** – Acmegrade (2024)
+* **Cyber Security (A+)** – IIRS, ISRO (2024)
+* **Data Visualization & Frontend Libraries** – freeCodeCamp
+* **JavaScript Algorithms & Data Structures** – freeCodeCamp
 
 ---
 
-### POSITIONS OF RESPONSIBILITY
-* **Sports Secretary:** Elected student representative; planned and executed multi-sport college tournaments and athletic logistics for 500+ participants.
-* **Student Representative, Induction Cell:** Appointed to the institute's AICTE-mandated Induction Cell (Feb 2026); facilitated student onboarding and technical mentorship.
+### POSITION OF RESPONSIBILITY
 
+**Sports Secretary** — Birla Institute of Applied Sciences, Bhimtal
+* Led sports events, tournaments, and team coordination.
+* Managed event planning, registrations, and logistics.
+* Represented athletes and coordinated with faculty.
+
+**Student Representative – Induction Cell** — Birla Institute of Applied Sciences, Bhimtal
+* Coordinated student orientation and onboarding activities.
+* Represented students and facilitated faculty communication.

@@ -45,10 +45,10 @@ export default function ResumePage() {
             KARTIK UPADHYAY
           </h1>
           <p className="text-base font-semibold text-accent mt-1 print:text-black print:text-sm">
-            AI &amp; Full-Stack Engineer
+            {profile.role}
           </p>
           <p className="text-xs text-mute mt-2 print:text-black print:text-[10px]">
-            {profile.location} &nbsp;|&nbsp; +91 7310991482 &nbsp;|&nbsp;{" "}
+            {profile.location} &nbsp;|&nbsp; {profile.phone} &nbsp;|&nbsp;{" "}
             <a href={`mailto:${profile.email}`} className="hover:underline">
               {profile.email}
             </a>{" "}
@@ -69,7 +69,7 @@ export default function ResumePage() {
             Professional Summary
           </h2>
           <p className="text-xs leading-relaxed text-mute print:text-black print:text-[10px]">
-            Computer Science Engineering student specializing in building production-grade Generative AI applications and resilient full-stack systems. Hands-on experience engineering Retrieval-Augmented Generation (RAG) pipelines, autonomous tool-calling agents, and scalable RESTful APIs with Python (FastAPI) and Node.js/Express. Proven ability to combine modern LLM orchestration with rigorous automated testing (Cypress), clean OOP architecture, and zero-downtime reliability.
+            {profile.summary}
           </p>
         </section>
 
@@ -109,6 +109,11 @@ export default function ResumePage() {
                     <li key={i}>{pt}</li>
                   ))}
                 </ul>
+                {e.tech && (
+                  <div className="mt-1 text-mute print:text-black print:text-[10px]">
+                    <strong className="text-ink print:text-black">Tech:</strong> {e.tech}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -152,6 +157,9 @@ export default function ResumePage() {
               <span className="font-normal">{education.period}</span>
             </div>
             <div>{education.degree}</div>
+            {Array.isArray(education.schooling)
+              ? education.schooling.map((s) => <div key={s}>{s}</div>)
+              : education.schooling && <div>{education.schooling}</div>}
           </div>
         </section>
 
@@ -165,10 +173,17 @@ export default function ResumePage() {
               <strong className="text-ink print:text-black">Certifications:</strong>{" "}
               {certifications.join(" · ")}
             </div>
-            <div>
-              <strong className="text-ink print:text-black">Leadership:</strong>{" "}
-              {responsibilities.map((r) => `${r.title} (${r.detail})`).join(" · ")}
-            </div>
+            {responsibilities.map((r) => (
+              <div key={r.title}>
+                <strong className="text-ink print:text-black">{r.title}:</strong>{" "}
+                <span className="italic">{r.org}</span>
+                <ul className="list-disc pl-4 mt-0.5 space-y-0.5">
+                  {r.points.map((p) => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
       </div>

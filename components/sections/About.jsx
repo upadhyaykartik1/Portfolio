@@ -5,19 +5,21 @@ export default function About() {
     <Section id="about" title="About">
       <div className="max-w-2xl space-y-5 text-lg leading-relaxed text-mute">
 <p>
-  I’m Kartik Upadhyay, a Computer Science student at Birla Institute of Applied Sciences (graduating 2027). 
-  I operate at the intersection of <strong>AI Engineering and Full-Stack Systems</strong>.
+  I’m Kartik Upadhyay, a Computer Science Engineering undergraduate at Birla Institute of Applied Sciences,
+  Bhimtal, graduating in 2027 with a CGPA of 7.64. I work at the intersection of
+  <strong> AI Engineering and Full-Stack Systems</strong>.
 </p>
 
 <p>
-  My focus is building production-grade Generative AI applications — designing 
-  <strong> RAG pipelines, autonomous agents, and vector search workflows</strong>, 
-  and connecting them to fast, resilient backends (Python/FastAPI, Node.js) and intuitive React interfaces.
+  As an <strong>AI Engineer Intern</strong>, I’ve integrated LLM-powered chatbots into a live e-commerce platform,
+  engineering prompts and a knowledge base for context-aware customer responses across
+  <strong> 4+ service categories and 30+ delivery locations</strong>.
 </p>
 
 <p>
-  With production internship experience building end-to-end APIs and leading AI-driven workflow automations, 
-  I prioritize clean code, automated testing (Cypress), and measurable system reliability.
+  I build with <strong>Node.js, Express.js, React.js, and MongoDB</strong>, and use ChatGPT, Gemini, and Claude
+  for content generation, FAQ automation, and e-commerce workflows. I also write automated API tests with
+  Cypress and care about clean validation and reliable delivery.
 </p>
  </div>
     </Section>

@@ -6,14 +6,14 @@ const sans = Geist({ subsets: ["latin"], variable: "--font-sans" });
 const display = Instrument_Serif({ subsets: ["latin"], weight: "400", variable: "--font-display" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-const description = `${profile.name} is an early-career AI and full-stack developer. B.Tech CSE, expected 2027. Node.js, React, REST APIs and LLM/RAG applications.`;
+const description = `${profile.name} is an AI Engineer Intern and full-stack developer. B.Tech CSE, expected 2027. LLM chatbots, prompt engineering, Node.js/Express, React, MongoDB, and Cypress.`;
 
 export const metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
-  title: `${profile.name} | AI & Full-Stack Developer`,
+  title: `${profile.name} | ${profile.role}`,
   description,
-  openGraph: { title: `${profile.name} | AI & Full-Stack Developer`, description, type: "website" },
-  twitter: { card: "summary", title: `${profile.name} | AI & Full-Stack Developer`, description },
+  openGraph: { title: `${profile.name} | ${profile.role}`, description, type: "website" },
+  twitter: { card: "summary", title: `${profile.name} | ${profile.role}`, description },
 };
 
 export const viewport = { themeColor: "#0d0e11" };

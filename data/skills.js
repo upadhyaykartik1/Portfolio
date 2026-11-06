@@ -1,37 +1,43 @@
 // data/skills.js
 export const skills = [
   {
-    group: "AI & GenAI",
+    group: "Programming Languages",
+    items: ["Python", "JavaScript", "Java", "C++"],
+  },
+  {
+    group: "AI/ML & Data Science",
     items: [
-      "LangChain",
-      "LlamaIndex",
-      "ChromaDB / Pinecone",
-      "RAG Architecture",
-      "OpenAI & Gemini APIs",
-      "Hugging Face",
-      "Prompt Engineering",
+      "Machine Learning",
+      "Deep Learning",
+      "Generative AI",
+      "LLMs",
+      "RAG",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
     ],
   },
   {
-    group: "Backend & Systems",
+    group: "Frameworks & Libraries",
+    items: ["Node.js", "Express.js", "React.js", "Redux", "Bootstrap"],
+  },
+  {
+    group: "Databases",
+    items: ["MySQL", "MongoDB", "SQL"],
+  },
+  {
+    group: "Tools & Platforms",
+    items: ["Git", "GitHub", "Cypress", "CI/CD"],
+  },
+  {
+    group: "Core Competencies",
     items: [
-      "Python (FastAPI)",
-      "Node.js",
-      "Express.js",
-      "RESTful APIs",
-      "Vector Search",
+      "DSA",
+      "OOP",
+      "Complexity Analysis",
+      "Analytical Thinking",
+      "Team Collaboration",
+      "Leadership",
     ],
-  },
-  {
-    group: "Frontend",
-    items: ["React.js", "Next.js", "Tailwind CSS", "Redux", "TypeScript"],
-  },
-  {
-    group: "Testing & DevOps",
-    items: ["Cypress", "Automated Testing", "Docker", "Git/GitHub", "CI/CD"],
-  },
-  {
-    group: "Core CS",
-    items: ["Data Structures & Algorithms", "OOP", "System Design Basics"],
   },
 ];

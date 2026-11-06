@@ -14,6 +14,7 @@ export default function Experience() {
             <ul className="mt-3 list-disc space-y-2 pl-5 text-mute marker:text-line">
               {e.points.map((p) => <li key={p}>{p}</li>)}
             </ul>
+            {e.tech && <p className="mt-3 text-sm text-mute"><span className="text-ink">Tech:</span> {e.tech}</p>}
           </li>
         ))}
       </ol>
@@ -24,10 +25,19 @@ export default function Experience() {
           <p className="mt-3">{education.degree}</p>
           <p className="text-mute">{education.school}</p>
           <p className="text-sm text-mute">{education.period}</p>
+          {education.schooling?.map((s) => (
+            <p key={s} className="text-sm text-mute">{s}</p>
+          ))}
           <h3 className="mt-10 text-xl">Responsibilities</h3>
-          <ul className="mt-3 space-y-3">
+          <ul className="mt-3 space-y-4">
             {responsibilities.map((r) => (
-              <li key={r.title}><span className="block">{r.title}</span><span className="text-sm text-mute">{r.detail}</span></li>
+              <li key={r.title}>
+                <span className="block">{r.title}</span>
+                <span className="block text-sm text-mute">{r.org}</span>
+                <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-mute marker:text-line">
+                  {r.points.map((p) => <li key={p}>{p}</li>)}
+                </ul>
+              </li>
             ))}
           </ul>
         </div>
